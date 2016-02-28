@@ -24,9 +24,6 @@ server <- function(input, output) {
 
         
     g = ggplot(data=data.frame(x), aes(x)) +
-        #stat_function(fun=f1, col="lightgrey", lwd=0.5, linetype="solid") +
-        #stat_function(fun=f2, col="lightgrey", lwd=0.5, linetype="solid") +
-        #stat_function(fun=f3, col="lightgrey", lwd=0.5, linetype="solid") +
         stat_function(fun=f4, col="orangered", lwd=0.6, linetype="solid", 
                       geom="area", alpha=0.6) +
         labs(x = "Frequency", y = "Amplitude") +
